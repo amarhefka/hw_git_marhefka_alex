@@ -1,0 +1,68 @@
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+html, body, header, main, section {
+	font-family: 'Raleway', sans-serif;
+	margin: auto;
+	max-width: 3068px;
+	width: 100%;
+}
+body {
+	background-color: #191919;
+	color: #fcfffb;
+}
+header {
+	background: linear-gradient(135deg, red, orange, yellow, green, blue, indigo, violet);
+	color: #fcfffb;
+	height: 200px;
+	padding-top: 12px;
+	text-align: center;
+}
+h1 {
+	font: 2.9rem 'Francois One', sans-serif;
+	position: relative;
+	text-shadow: 0.05em 0 30px #191919, 0 0.05em 30px #191919, -0.05em 0 30px #191919, 0 -0.05em 30px #191919, -0.05em -0.05em 30px #191919, -0.05em 0.05em 30px #191919, 0.05em -0.05em 30px #191919, 0.05em 0.05em 30px #191919;
+}
+section {
+	padding-bottom: 15px;
+	max-width: 1000px;
+	margin: auto;
+	width: 83%;
+}
+h2 {
+	font-family: 'Francois One', sans-serif;
+	font-size: 2.5rem;
+	text-align: center;
+	margin: 12px 0px;
+}
+p {
+	line-height: 1.35rem;
+	padding-bottom: 15px;
+}
+figure img {
+	width: 100%;
+}
+figcaption {
+	text-align: center;
+}
+a:focus, a:hover, a:link, a:visited, a:active {
+	color: #191919;
+	outline: none;
+}
+/* START MEDIA QUERIES */
+/* first breakpoint, 930px and up */
+@media (min-width: 930px) {
+	section {
+		clear: both;
+	}
+	section p {
+		float: left;
+		width: 46%;
+	}
+	section figure {
+		float: right;
+		width: 40%;
+	}
+}
