@@ -1,3 +1,4 @@
+/* Note that the display property for HTML5 elements is already accounted for in normalize.min.css, so that rule is omitted here. */
 * {
 	border: 0;
 	margin: 0;
@@ -6,7 +7,7 @@
 html, body, header, main, section {
 	font-family: 'Raleway', sans-serif;
 	margin: auto;
-	max-width: 3068px;
+	max-width: 2200px;
 	width: 100%;
 }
 body {
@@ -15,54 +16,58 @@ body {
 }
 header {
 	background: linear-gradient(135deg, red, orange, yellow, green, blue, indigo, violet);
+	box-shadow: inset 0 -6px 14px -6px rgba(25, 25, 25, 0.5), inset 0 6px 14px -6px rgba(25, 25, 25, 0.5);
 	color: #fcfffb;
-	height: 200px;
-	padding-top: 12px;
+	padding: 12px 0px 15px;
 	text-align: center;
 }
 h1 {
 	font: 2.9rem 'Francois One', sans-serif;
-	position: relative;
 	text-shadow: 0.05em 0 30px #191919, 0 0.05em 30px #191919, -0.05em 0 30px #191919, 0 -0.05em 30px #191919, -0.05em -0.05em 30px #191919, -0.05em 0.05em 30px #191919, 0.05em -0.05em 30px #191919, 0.05em 0.05em 30px #191919;
 }
 section {
-	padding-bottom: 15px;
-	max-width: 1000px;
+	max-width: 800px;
 	margin: auto;
-	width: 83%;
 }
 h2 {
 	font-family: 'Francois One', sans-serif;
 	font-size: 2.5rem;
 	text-align: center;
-	margin: 12px 0px;
+	margin: 25px 0px 15px;
 }
 p {
 	line-height: 1.35rem;
-	padding-bottom: 15px;
+	margin: auto;
+	padding: 0px 8% 15px;
+}
+figure {
+	padding-bottom: 25px;
+	width: 100%;
 }
 figure img {
 	width: 100%;
 }
 figcaption {
 	text-align: center;
+	padding: 2px 8% 0px;
 }
 a:focus, a:hover, a:link, a:visited, a:active {
 	color: #191919;
 	outline: none;
 }
-/* START MEDIA QUERIES */
-/* first breakpoint, 930px and up */
-@media (min-width: 930px) {
+/* MEDIA QUERIES */
+/* first breakpoint, 720px and up */
+@media (min-width: 720px) {
 	section {
 		clear: both;
 	}
-	section p {
+	p {
 		float: left;
-		width: 46%;
+		padding-right: 0px;
+		width: 40%;
 	}
 	section figure {
 		float: right;
-		width: 40%;
+		width: 48%;
 	}
 }
